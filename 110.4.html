@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="106.js"></script>
+</head>
+<body>
+    <canvas width="200" height="200" style="background: #f4f4f4;"></canvas>
+    <script>
+        function getRadians(degrees) {
+	return (Math.PI / 180) * degrees;
+}
+    let canvas = document.querySelector('canvas');
+    let ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.rect(70, 40, 60, 60);
+ctx.fillStyle = 'green';
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(70, 130, 60,60);
+ctx.fillStyle = 'red';
+ctx.fill();
+
+    </script>    
+</body>
+</html

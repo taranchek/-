@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="elem">text</button>
+    <script> <div id="elem">0 : 0</div>
+        let elem = document.querySelector('#elem');
+
+        document.addEventListener('mousemove', function(event) {
+            elem.innerHTML = event.clientX + ' : ' + event.clientX;
+
+        });
+
+    </script>
+    <script>
+        elem.addEventListener('click', function(event) {
+	console.log(event); 
+    });
+
+    </script> 
+
+</body>
+</html>
+
